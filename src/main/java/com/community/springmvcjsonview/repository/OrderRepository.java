@@ -1,4 +1,7 @@
 package com.community.springmvcjsonview.repository;
 
-public class OrderRepository {
+import com.community.springmvcjsonview.entity.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderRepository extends JpaRepository<Order,Long> {
 }
